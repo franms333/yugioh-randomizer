@@ -1,0 +1,40 @@
+
+<div class="container"
+    style="text-align: center;">
+  <div *ngIf="card.name !== ''; else infoText" >
+    <h1>{{card.name}}</h1>
+
+    <img [src]="card.image" [alt]="card.name" class="img-responsive" style="margin-bottom: 15px;">
+
+    <div
+    class="col-md-6"
+    style="margin-top: 20px;
+    border-style: solid;
+    border-color: brown;
+    margin: auto;
+    background-color: white;">
+      <p>{{card.desc}}</p>
+    </div>
+
+  </div>
+  <ng-template #infoText>
+    <h3>Draw an Action Card!</h3>
+    <img [src]="card.image" [alt]="card.name" class="img-responsive">
+  </ng-template>
+</div>
+
+<div class="container" style="text-align: center;">
+  <div>
+    <button class="btn btn-primary "
+    (click)="onClickDraw()"
+    style="margin-top: 15px;"
+    [disabled]="cannotDraw">Draw!</button>
+    <button class="btn btn-danger "
+    (click)="onReset()"
+    style="margin-top: 15px; margin-left: 5px;"
+    [disabled]="cannotReset">Reset</button>
+  </div>
+</div>
+
+
+

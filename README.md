@@ -1,6 +1,12 @@
-# YgoRandomizer
+# YuGiOH Randomizer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+This is a YuGiOh! card randomizer project made in Angular.
+
+For this project I used the Yu-Gi-Oh! API Guide - YGOPRODECK
+
+## Disclaimer
+
+I do not own any of the cards presented in this App, all YuGiOh! merchandise and intellectual property is owned by Konami Group.
 
 ## Development server
 
